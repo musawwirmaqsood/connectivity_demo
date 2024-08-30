@@ -1,0 +1,35 @@
+# Flutter/Dart/Pub related
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+pubspec.lock
+
+# Android
+*.jks
+*.keystore
+.android/
+local.properties
+
+# iOS
+ios/Pods/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+
+# Web
+.web/
+
+# macOS
+.DS_Store
+.build/
+
+# Windows
+windows/
+*.exe
+
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
