@@ -23,7 +23,15 @@ class _MyAppState extends State<MyApp> {
 
   void handleResult(List<ConnectivityResult> results) {
     if (navigatorKey.currentContext != null) {
-      if (results.contains(ConnectivityResult.none)) {}
+      if (results.contains(ConnectivityResult.none)) {
+        ScaffoldMessenger.of(navigatorKey.currentContext!).showSnackBar(
+            const SnackBar(
+                backgroundColor: Colors.red,
+                duration: Duration(days: 1),
+                content: Text('No Internet Connection!')));
+      } else {
+        ScaffoldMessenger.of(navigatorKey.currentContext!).clearSnackBars();
+      }
     }
   }
 
